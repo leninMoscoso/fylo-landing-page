@@ -1,0 +1,73 @@
+:root {
+  /* Colors */
+
+  /* Primary */
+
+  --Very-Dark-Blue: #070439;
+  --Desaturated-Blue: #585989;
+
+  /* Accent */
+
+  --Bright-Blue: #3065f8;
+  --Moderate-Cyan: #3c9f8f;
+
+  /* Neutral */
+
+  --Light-Grayish-Blue: #f6f6fe;
+  --Light-Gray: #bfbfbf;
+
+  /* Fonts */
+  /* Body */
+  --Open-sans: "Open Sans", sans-serif; /*Weights: 400*/
+
+  /* Headings, Call-to-actions, Header Navigation */
+  --Raleway: "Raleway", sans-serif; /*Weights: 400, 700*/
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background-color: var();
+}
