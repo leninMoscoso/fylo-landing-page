@@ -69,5 +69,140 @@ h6 {
 }
 
 body {
-  background-color: var();
+  font-family: var(--Open-sans);
+}
+
+header,
+.section-1 {
+  margin: 2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  margin-right: 1rem;
+  min-width: 100px;
+  height: 29px;
+}
+
+.nav-bar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #000;
+}
+
+.title {
+  /*use clamp*/
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.input-1 {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+  min-height: 2.5rem;
+  border-radius: 0.2rem;
+}
+
+.btn-1 {
+  width: 100%;
+  background-color: var(--Bright-Blue);
+  color: #fff;
+  min-height: 2.5rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0.2rem;
+  margin-bottom: 5rem;
+}
+
+.curve-img {
+  background-image: url("./images/bg-curve-mobile.svg");
+  padding: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-2 {
+  background-color: var(--Light-Grayish-Blue);
+}
+
+article {
+  padding: 2rem;
+}
+
+.stay-productive {
+  font-size: 1rem; /* use clamp()*/
+  padding-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.description-stay-productive > p {
+  margin-bottom: 2rem;
+}
+
+article p:nth-child(4) {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-arrow > a > img {
+  margin-left: 0.5rem;
+}
+
+article p:nth-child(4) a {
+  text-decoration: none;
+  color: var(--Moderate-Cyan);
+  display: flex;
+  border-bottom: 2px solid var(--Moderate-Cyan);
+}
+
+.card {
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+  box-shadow: 0px 0px 5px 1px rgba(202, 213, 232, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(202, 213, 232, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(202, 213, 232, 0.75);
+
+  margin-bottom: 5rem;
+}
+
+.card > div > p {
+  margin-top: 1rem;
+}
+
+.kyle {
+  display: grid;
+  grid-template-columns: 50px 150px;
+  margin-top: 1rem;
+}
+
+.kyle img {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.name,
+.ceo {
+  grid-column-start: 2;
+}
+
+.name {
+  font-weight: bold;
 }
