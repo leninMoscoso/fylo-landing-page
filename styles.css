@@ -307,13 +307,23 @@ article p:nth-child(4) a {
 }
 
 @media (min-width: 360px) {
+  .header,
   .nav-bar {
-    outline: 1px solid red;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .nav-bar {
+    width: 100%;
     justify-content: flex-end;
-    /* justify-content: space-evenly; */
   }
 
   .nav-bar a {
     font-weight: 100;
+    padding-left: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
   }
 }
