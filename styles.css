@@ -149,7 +149,7 @@ article {
 }
 
 .stay-productive {
-  font-size: 1rem; /* use clamp()*/
+  font-size: 1rem;
   text-align: center;
   padding-left: 1rem;
   margin-bottom: 1rem;
@@ -213,25 +213,37 @@ article p:nth-child(4) a {
 }
 
 .pre-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--Desaturated-Blue);
   color: #fff;
-  padding: 1rem;
+  height: 22.5rem;
 }
 
-.pre-footer p {
-  margin-bottom: 1.5rem;
+.get-early {
+  font-family: var(--Raleway);
+  font-size: 1.2rem;
 }
 
-.input-2,
-.btn-2 {
-  min-height: 2.5rem;
+.description-get-early {
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.input-2 {
+  margin-top: 3rem;
   margin-bottom: 0.5rem;
+  height: 2.3em;
 }
 
 .btn-2 {
-  color: #fff;
-  background-color: var(--Bright-Blue);
   border: 0;
+  background-color: var(--Bright-Blue);
+  color: #fff;
+  height: 2.3rem;
 }
 
 .footer {
@@ -276,12 +288,17 @@ article p:nth-child(4) a {
   text-decoration: none;
 }
 
-.links-footer > div {
+.links-footer-2 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
+}
+
+.links-footer-2 a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .social-network {
@@ -306,24 +323,400 @@ article p:nth-child(4) a {
   text-decoration: none;
 }
 
-@media (min-width: 360px) {
-  .header,
+@media (min-width: 800px) {
   .nav-bar {
-    margin-left: 1.5rem;
-    margin-right: 1rem;
+    font-size: 1rem;
   }
 
-  .nav-bar {
-    width: 100%;
-    justify-content: flex-end;
+  .section-1 {
+    display: grid;
+    grid-template-columns: 20rem 20rem;
+    position: relative;
+    margin: auto 1.5rem;
   }
 
-  .nav-bar a {
-    font-weight: 100;
-    padding-left: 1rem;
+  .img-1 {
+    grid-column: 2;
+    position: absolute;
+    left: 2rem;
+    width: 25rem;
+  }
+
+  .title,
+  .description,
+  .input-1,
+  .btn-1 {
+    grid-column: 1;
+    position: absolute;
   }
 
   .title {
-    font-size: 1.5rem;
+    width: 20rem;
+    text-align: left;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    top: 2rem;
+  }
+
+  .description {
+    width: 20rem;
+    top: 9.5rem;
+    text-align: left;
+  }
+
+  .input-1 {
+    top: 20rem;
+    left: 2rem;
+    width: 20rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .btn-1 {
+    padding: 0;
+    margin: 0;
+    width: 20rem;
+    top: 20rem;
+    left: 23rem;
+  }
+
+  .curve-img {
+    margin-top: 30rem;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 20rem 20rem;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 40rem;
+  }
+
+  .img-2 {
+    grid-column: 2;
+  }
+
+  .stay-productive {
+    grid-column: 1;
+    position: absolute;
+    font-size: 1.8rem;
+    width: 20rem;
+    text-align: left;
+    line-height: 2rem;
+  }
+
+  .description-stay-productive {
+    position: absolute;
+    width: 22rem;
+    font-size: 1rem;
+    color: #000;
+    top: 8rem;
+    left: 1rem;
+  }
+
+  .img-2 {
+    position: absolute;
+    width: 25rem;
+    left: 4rem;
+  }
+
+  .icon-arrow {
+    position: absolute;
+    top: 20rem;
+    left: 1rem;
+  }
+
+  .icon-arrow a {
+    font-size: 1rem;
+  }
+
+  .card {
+    position: absolute;
+    width: 22rem;
+    top: 22rem;
+    left: 14rem;
+  }
+
+  .description-card {
+    font-size: 0.8rem;
+  }
+
+  .name,
+  .ceo {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header {
+    margin: 4rem;
+    padding: 0;
+  }
+
+  .logo {
+    width: 166px;
+    height: 49px;
+  }
+
+  .nav-bar {
+    font-size: 1rem;
+  }
+
+  .nav-bar a {
+    padding-left: 3.6rem;
+    font-weight: 200;
+  }
+
+  .section-1 {
+    display: grid;
+    grid-template-columns: 40rem 40rem;
+    position: relative;
+    padding: 0;
+    margin-top: 10rem;
+  }
+
+  .img-1 {
+    grid-column: 2;
+    margin-left: 5.6rem;
+  }
+
+  .title {
+    position: absolute;
+    font-family: var(--Raleway);
+    font-size: 2.4rem;
+    width: 36rem;
+    text-align: left;
+    top: 0.2rem;
+    margin-left: 4.4rem;
+  }
+
+  .description {
+    position: absolute;
+    top: 8.5rem;
+    width: 35rem;
+    margin-left: 4.4rem;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .input-1 {
+    position: absolute;
+    top: 14.6rem;
+    left: 4.4rem;
+    margin: 0;
+    width: 20rem;
+    height: 2.8rem;
+    font-size: 0.8rem;
+  }
+
+  .btn-1 {
+    position: absolute;
+    top: 14.6rem;
+    left: 24.4rem;
+    width: 12.5rem;
+    height: 2.8rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .img-1 {
+    margin-top: -5rem;
+  }
+
+  .section-1 {
+    margin-bottom: 10rem;
+  }
+
+  .curve-img {
+    background-image: url("./images/bg-curve-desktop.svg");
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 40rem 40rem;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 50rem;
+  }
+
+  .img-2 {
+    grid-column: 2;
+    position: absolute;
+    top: 5rem;
+    right: 4.8rem;
+    width: 35rem;
+  }
+
+  .stay-productive {
+    position: absolute;
+    grid-column: 1;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 2.4rem;
+    font-family: var(--Raleway);
+    top: 3.3rem;
+    left: 5rem;
+  }
+
+  .description-stay-productive {
+    position: absolute;
+    top: 8.9rem;
+    font-size: 1rem;
+    width: 34rem;
+    left: 5rem;
+    color: #000;
+  }
+
+  .icon-arrow {
+    position: absolute;
+    top: 17rem;
+    left: 5rem;
+  }
+
+  .icon-arrow a {
+    font-size: 1rem;
+  }
+
+  .card {
+    position: absolute;
+    top: 21.4rem;
+    margin: 0;
+    left: 5rem;
+    width: 22.3rem;
+    height: 13.5rem;
+    padding: 2rem;
+  }
+
+  .description-card {
+    font-size: 0.8rem;
+    width: 17.3rem;
+  }
+
+  .kyle > img {
+    width: 34px;
+  }
+
+  .name,
+  .ceo {
+    margin-left: -0.5rem;
+  }
+
+  .ceo {
+    font-size: 9px;
+    color: var(--Desaturated-Blue);
+  }
+
+  .pre-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .pre-footer {
+    margin-top: -8.5rem;
+    height: 20.1rem;
+  }
+
+  .get-early {
+    grid-column: 1;
+    position: absolute;
+    top: 6.2rem;
+    left: 5rem;
+    font-size: 2rem;
+    font-family: var(--Raleway);
+  }
+
+  .description-get-early {
+    grid-column: 1;
+    font-size: 1rem;
+    position: absolute;
+    top: 10.2rem;
+    left: 5rem;
+    width: 30.4rem;
+    text-align: left;
+  }
+
+  .input-2 {
+    position: absolute;
+    right: 7.5rem;
+    top: 3rem;
+    grid-column: 2;
+    width: 30rem;
+    height: 3.1rem;
+  }
+
+  .btn-2 {
+    position: absolute;
+    grid-column: 2;
+    width: 12.5rem;
+    top: 7rem;
+    right: 25rem;
+    display: block;
+    height: 3rem;
+    font-weight: bold;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    height: 30rem;
+  }
+
+  .logo-footer {
+    grid-column: 1;
+    position: absolute;
+    left: 3.1rem;
+    top: 7rem;
+  }
+
+  .phone {
+    grid-column: 1;
+    position: absolute;
+    left: 3.1rem;
+    top: 11.5rem;
+  }
+
+  .email {
+    grid-column: 1;
+    position: absolute;
+    left: 3.1rem;
+    top: 14rem;
+  }
+
+  .links-footer {
+    grid-column: 2;
+    position: absolute;
+    left: 8.5rem;
+    top: 11.4rem;
+  }
+
+  .links-footer-2 {
+    grid-column: 3;
+    position: absolute;
+    left: 3.6rem;
+    top: 11.5rem;
+  }
+
+  .links-footer-2 a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .social-network {
+    grid-column: 4;
+    position: absolute;
+    right: 9rem;
+    top: 11.6rem;
   }
 }
