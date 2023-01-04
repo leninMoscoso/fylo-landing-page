@@ -461,10 +461,11 @@ article p:nth-child(4) a {
 
   .nav-bar {
     font-size: 1rem;
+    justify-content: flex-end;
   }
 
   .nav-bar a {
-    padding-left: 3.6rem;
+    padding-left: 4rem;
     font-weight: 200;
   }
 
@@ -478,7 +479,8 @@ article p:nth-child(4) a {
 
   .img-1 {
     grid-column: 2;
-    margin-left: 5.6rem;
+    margin-left: 2.4rem;
+    width: 40rem;
   }
 
   .title {
@@ -489,6 +491,7 @@ article p:nth-child(4) a {
     text-align: left;
     top: 0.2rem;
     margin-left: 4.4rem;
+    line-height: 3.5rem;
   }
 
   .description {
@@ -503,7 +506,7 @@ article p:nth-child(4) a {
   .input-1 {
     position: absolute;
     top: 14.6rem;
-    left: 4.4rem;
+    left: 3.6rem;
     margin: 0;
     width: 20rem;
     height: 2.8rem;
@@ -513,7 +516,7 @@ article p:nth-child(4) a {
   .btn-1 {
     position: absolute;
     top: 14.6rem;
-    left: 24.4rem;
+    left: 24.5rem;
     width: 12.5rem;
     height: 2.8rem;
     font-size: 0.8rem;
@@ -548,8 +551,8 @@ article p:nth-child(4) a {
     grid-column: 2;
     position: absolute;
     top: 5rem;
-    right: 4.8rem;
-    width: 35rem;
+    left: 11.2rem;
+    width: 34rem;
   }
 
   .stay-productive {
@@ -657,7 +660,6 @@ article p:nth-child(4) a {
     position: absolute;
     grid-column: 2;
     width: 12.5rem;
-    top: 7rem;
     right: 25rem;
     display: block;
     height: 3rem;
