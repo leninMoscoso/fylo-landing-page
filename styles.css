@@ -732,44 +732,42 @@ article p:nth-child(4) a {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     position: relative;
-    height: 100vh;
+    height: 50%;
   }
 
   .logo-footer {
     grid-column: 1;
     position: absolute;
     left: 4rem;
-    top: 5.9rem;
-    min-width: 150px;
-    height: 39px;
+    top: 6.8rem;
   }
 
   .phone {
     grid-column: 1;
     position: absolute;
     left: 4rem;
-    top: 10.6rem;
+    top: 11.5rem;
   }
 
   .email {
     grid-column: 1;
     position: absolute;
     left: 4rem;
-    top: 13rem;
+    top: 14rem;
   }
 
   .links-footer {
     grid-column: 2;
     position: absolute;
     left: 9.3rem;
-    top: 10.4rem;
+    top: 11.5rem;
   }
 
   .links-footer-2 {
     grid-column: 3;
     position: absolute;
     left: 4rem;
-    top: 7.5rem;
+    top: 8.2rem;
   }
 
   .links-footer-2 a {
@@ -783,6 +781,6 @@ article p:nth-child(4) a {
     grid-column: 4;
     position: absolute;
     right: 9rem;
-    top: 10.6rem;
+    top: 11.6rem;
   }
 }
